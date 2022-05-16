@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "50146af4-2690-4343-9d63-36bac40627ad"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -53,7 +56,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/chart.js/dist/Chart.min.js"],
+            "allowedCommonJsDependencies": [
+              "chart.js"
+            ]
           },
           "configurations": {
             "production": {
