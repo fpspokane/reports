@@ -1,3 +1,21 @@
 .instructions {
-  float: bottom;
+  border: 5px solid;
+  margin: auto;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  width: 50%;
+  padding: 10px;
+  text-shadow: 1px 1px 1px hsl(160, 16%, 26%);
+  color: hsl(160, 16%, 26%);
 }
+
+span
+{
+  float: auto;
+  margin: auto;
+  text-align: center;
+}
+
+
+
