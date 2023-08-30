@@ -10,12 +10,36 @@
   color: hsl(160, 16%, 26%);
 }
 
-span
+.span
 {
   float: auto;
   margin: auto;
   text-align: center;
 }
+
+.button:hover {
+      background-color:#002ead;
+      color: white;
+      transition: 0.7s;
+  }
+
+.button:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+}
+
+  .button:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+    transition: 0.7s;
+}
+
+.button:active {
+    background-color: #ffbf00;
+}
+
 
 
 
