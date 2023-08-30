@@ -1,11 +1,16 @@
-<div style="width: 40%;">
-  <canvas
-    baseChart
-    [chartType]="'line'"
-    [legend]="true"
-    [datasets]="chartData"
-    [labels]="chartLabels"
-    [options]="chartOptions"
-  >
-  </canvas>
+
+<div>
+<h1 class="instructions">Please Press A Button To Open Report in New Page</h1>
 </div>
+<div>
+  <button (click)="openAllProjectsStats()">Open "All Projects Stats" in New Page</button>
+</div>
+<div>
+  <button (click)="openEsStats()">Open "All ES Projects Stats" in New Page</button>
+</div>
+<div>
+  <button (click)="openFamPromPreventionStats()">Open "Family Promise Prevention Stats" in New Page</button>
+</div>
+
+
+
