@@ -6,16 +6,28 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SplashPageComponent } from './components/splash-page/splash-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomeComponent } from './components/home/home.component';
+import { ProvidersComponent } from './components/providers/providers.component';
+import { EsProvidersComponent } from './components/es-providers/es-providers.component';
+import { FpsPreventionComponent } from './components/fps-prevention/fps-prevention.component';
 
-const appRoutes: Routes = [{ path: '', component: SplashPageComponent }];
+const appRoutes: Routes = [
+  { path: '', component: SplashPageComponent },
+  { path: 'providers', component: ProvidersComponent },
+  { path: 'es-providers', component: EsProvidersComponent },
+  {
+    path: 'fps-prevention',
+    component: FpsPreventionComponent,
+  },
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     SplashPageComponent,
     NavbarComponent,
-    HomeComponent,
+    ProvidersComponent,
+    EsProvidersComponent,
+    FpsPreventionComponent,
   ],
   imports: [
     BrowserModule,
