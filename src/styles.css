@@ -1,2 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import "meyer-reset.css";
+
+/* global colors */
+:root {
+  --primary-color: #98b5e0;
+  --secondary-color: #e5f1ff;
+  --tertiary-color: #ba4654;
+  --background-color: #fafaff;
+  --primary-text: #030d25;
+}
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
