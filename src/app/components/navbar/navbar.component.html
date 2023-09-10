@@ -1,6 +1,6 @@
-<section class="nav">
+<section class="nav" [class.nav-background]="currentPath !== '/'">
   <img class="nav-logo" src="assets/images/ikTech-nb.png" alt="ikTech logo" />
-  <div class="nav-links">
+  <div class="nav-links" [class.hide]="currentPath === '/'">
     <a class="nav-link" routerLink="/providers">Providers Dash</a>
     <a class="nav-link" routerLink="/es-providers"> ES Providers Dash</a>
     <a class="nav-link" routerLink="/fps-prevention">FPS Prevention Dash</a>
