@@ -1,5 +1,5 @@
 .sp-hero {
-  background-image: url(../../../assets/images/ev-IWJH-l-vb4k-unsplash-desktop2.jpg);
+  background-image: url(../../../assets/images/ev-IWJH-l-vb4k-unsplash-desktop.jpg);
   background-size: cover;
   background-position: center center;
   opacity: 50%;
@@ -22,13 +22,15 @@
   justify-content: center;
   width: 100%;
   height: 45vh;
-  padding-top: 8%;
+  padding-top: 11vh;
 }
 .sp-button {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-decoration: none;
+  color: var(--primary-text);
   font-weight: 200;
   border-radius: 10px;
   background-color: var(--primary-color);
@@ -36,8 +38,11 @@
   padding: 0 30px;
   margin: 0 2%;
   cursor: pointer;
-  transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out, transform 100ms ease-out;
 }
 .sp-button:hover {
   background-color: var(--secondary-color);
+}
+.sp-button:active {
+  transform: scale(0.9);
 }
