@@ -1,3 +1,23 @@
+.splash-hero {
+  background-image: url(../../../assets/images/ev-IWJH-l-vb4k-unsplash-desktop2.jpg);
+  background-size: cover;
+  background-position: center center;
+  opacity: 50%;
+  width: 100%;
+  height: 45vh;
+}
+.splash-title {
+  /* display: flex; */
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  width: 90%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .instructions {
   border: 5px solid;
   margin: auto;
