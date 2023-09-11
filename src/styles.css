@@ -9,7 +9,7 @@
   --background-color: #fafaff;
   --primary-text: #030d25;
 }
-html,
-body {
+* {
   font-family: "Inter", sans-serif;
+  box-sizing: border-box;
 }
