@@ -25,9 +25,9 @@
   margin-right: 40px;
   text-decoration: none;
   color: var(--primary-text);
-  transition: transform 300ms ease-out;
   padding: 3px 0;
   font-size: 0.9rem;
+  transition: transform 300ms ease-out;
 }
 .nav-link:hover {
   transform: scale(1.05);

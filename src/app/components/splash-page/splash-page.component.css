@@ -1,40 +1,48 @@
-.instructions {
-  border: 5px solid;
-  margin: auto;
+.sp-hero {
+  background-image: url(../../../assets/images/ev-IWJH-l-vb4k-unsplash-desktop.jpg);
+  background-size: cover;
+  background-position: center center;
+  opacity: 50%;
+  width: 100%;
+  height: 45vh;
+}
+.sp-title {
   text-align: center;
-  font-size: xx-large;
-  font-weight: bold;
-  width: 50%;
-  padding: 10px;
-  text-shadow: 1px 1px 1px hsl(160, 16%, 26%);
-  color: hsl(160, 16%, 26%);
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  width: 90%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.span {
-  float: auto;
-  margin: auto;
+.sp-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 45vh;
+  padding-top: 11vh;
+}
+.sp-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  text-decoration: none;
+  color: var(--primary-text);
+  font-weight: 200;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  height: 50px;
+  padding: 0 30px;
+  margin: 0 2%;
+  cursor: pointer;
+  transition: background-color 300ms ease-out, transform 100ms ease-out;
 }
-
-.button:hover {
-  background-color: #002ead;
-  color: white;
-  transition: 0.7s;
+.sp-button:hover {
+  background-color: var(--secondary-color);
 }
-
-.button:focus {
-  outline-color: transparent;
-  outline-style: solid;
-  box-shadow: 0 0 0 4px #5a01a7;
-}
-
-.button:focus {
-  outline-color: transparent;
-  outline-style: solid;
-  box-shadow: 0 0 0 4px #5a01a7;
-  transition: 0.7s;
-}
-
-.button:active {
-  background-color: #ffbf00;
+.sp-button:active {
+  transform: scale(0.9);
 }

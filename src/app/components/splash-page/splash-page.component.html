@@ -1,15 +1,12 @@
-<div class="hero"></div>
-<div class="instructions">
-  <p>City of Spokane Service Provider Stats Dashboard</p>
-  <button class="button" (click)="openAllProjectsStats()">
-    All Providers Dashboard
-  </button>
-  <br />
-  <button class="button" (click)="openEsStats()">
-    All ES Providers Dashboard
-  </button>
-  <br />
-  <button class="button" (click)="openFamPromPreventionStats()">
-    FPS Prevention/Diversion Dashboard
-  </button>
+<div class="sp-hero"></div>
+<h1 class="sp-title">Spokane County Provider Stats Hub</h1>
+<div class="sp-buttons">
+  <!-- <div class="sp-button" (click)="openAllProjectsStats()">Providers Dash</div>
+  <div class="sp-button" (click)="openEsStats()">ES Providers Dash</div>
+  <div class="sp-button" (click)="openFamPromPreventionStats()">
+    FPS Prevention Dash
+  </div> -->
+  <a class="sp-button" routerLink="/providers">Providers Dash</a>
+  <a class="sp-button" routerLink="/es-providers"> ES Providers Dash</a>
+  <a class="sp-button" routerLink="/fps-prevention">FPS Prevention Dash</a>
 </div>
