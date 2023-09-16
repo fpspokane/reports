@@ -2,8 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: 8vh;
   border-top: 1px solid var(--secondary-color);
+  background-color: var(--background-color);
 }
 .f-copyright {
   text-align: center;

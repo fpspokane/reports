@@ -4,7 +4,7 @@
   background-position: center center;
   opacity: 50%;
   width: 100%;
-  height: 45vh;
+  height: 46vh;
 }
 .sp-title {
   text-align: center;
@@ -21,8 +21,9 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 45vh;
+  height: 46vh;
   padding-top: 11vh;
+  background-color: var(--background-color);
 }
 .sp-button {
   display: flex;
