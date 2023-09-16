@@ -1,8 +1,15 @@
 <section class="nav" [class.nav-splash-page]="currentPath === '/'">
-  <img class="nav-logo" src="assets/images/ikTech-nb.png" alt="ikTech logo" />
+  <img
+    class="nav-logo"
+    src="assets/images/ikTech-nb.png"
+    alt="ikTech logo"
+    routerLink="/"
+  />
   <div class="nav-links" [class.hide]="currentPath === '/'">
     <a class="nav-link" routerLink="/providers">All Providers Dashboard</a>
     <a class="nav-link" routerLink="/es-providers"> ES Providers Dashboard</a>
-    <a class="nav-link" routerLink="/fps-prevention">FPS Prevention Dashboard</a>
+    <a class="nav-link" routerLink="/fps-prevention"
+      >FPS Prevention Dashboard</a
+    >
   </div>
 </section>
