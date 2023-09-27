@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "meyer-reset.css";
+@import "~material-icons/iconfont/material-icons.css";
 
 /* global colors */
 :root {
@@ -7,6 +8,7 @@
   --secondary-color: #e5f1ff;
   --tertiary-color: #ba4654;
   --background-color: #fafaff;
+  --hamburger-color: #98b5e0;
   --primary-text: #030d25;
 }
 * {

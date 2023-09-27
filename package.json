@@ -20,6 +20,7 @@
     "@angular/router": "~13.3.0",
     "angular-new-router": "github:angular/router",
     "chart.js": "^2.9.4",
+    "material-icons": "^1.13.11",
     "ng2-charts": "^2.4.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
