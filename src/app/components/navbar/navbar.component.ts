@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
@@ -8,8 +8,11 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   currentPath: string = '/';
+  screenWidth: number = window.innerWidth;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    this.getScreenSize();
+  }
 
   ngOnInit() {
     this.router.events.subscribe((event) => {
@@ -17,5 +20,11 @@ export class NavbarComponent implements OnInit {
         this.currentPath = this.router.url;
       }
     });
+  }
+
+  @HostListener('window:resize', ['$event'])
+  getScreenSize(event?: string) {
+    this.screenWidth = window.innerWidth;
+    console.log(this.screenWidth);
   }
 }
