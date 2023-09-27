@@ -42,5 +42,5 @@
   transition: transform 300ms ease-out;
 }
 .hamburger:active {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }

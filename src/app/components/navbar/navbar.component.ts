@@ -9,6 +9,7 @@ import { Router, NavigationEnd } from '@angular/router';
 export class NavbarComponent implements OnInit {
   currentPath: string = '/';
   screenWidth: number = window.innerWidth;
+  hamburger: boolean = false;
 
   constructor(private router: Router) {
     this.getScreenSize();
@@ -25,6 +26,10 @@ export class NavbarComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   getScreenSize(event?: string) {
     this.screenWidth = window.innerWidth;
-    console.log(this.screenWidth);
+  }
+
+  toggleHamburger() {
+    this.hamburger = !this.hamburger;
+    console.log(this.hamburger);
   }
 }
