@@ -20,10 +20,13 @@
   </ng-container>
   <ng-template #hamburgerMenu [class.hide]="currentPath === '/'">
     <i class="material-icons hamburger" (click)="toggleHamburger()">{{
-      hamburger ? "close" : "menu_open"
+      "menu_open"
     }}</i>
   </ng-template>
-  <ng-container *ngIf="hamburger">
-    <app-hamburger></app-hamburger>
-  </ng-container>
 </section>
+<ng-container *ngIf="hamburger">
+  <app-hamburger
+    [data]="hamburger"
+    [toggleHamburger]="toggleHamburger.bind(this)"
+  ></app-hamburger>
+</ng-container>
