@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./hamburger.component.css'],
 })
 export class HamburgerComponent implements OnInit {
-  @Input() data!: boolean;
+  @Input() hamburger!: boolean;
   @Input() toggleHamburger!: Function;
 
   constructor() {}

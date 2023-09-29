@@ -27,9 +27,9 @@
     >
   </ng-template>
 </section>
-<ng-container *ngIf="hamburger">
+<ng-container>
   <app-hamburger
-    [data]="hamburger"
+    [hamburger]="hamburger"
     [toggleHamburger]="toggleHamburger.bind(this)"
   ></app-hamburger>
 </ng-container>

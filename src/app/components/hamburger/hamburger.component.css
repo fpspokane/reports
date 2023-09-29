@@ -2,13 +2,18 @@
   background-color: var(--primary-color);
   height: 100vh;
   width: 350px;
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0;
+  /* right: 0; */
+  right: -100%;
   padding: 0 10px;
   z-index: 1;
   border-radius: 10px 0 0 10px;
   box-shadow: 0 0 10px 0 black;
+  transition: right 500ms ease;
+}
+.slide-in {
+  right: 0;
 }
 .h-icon-container {
   display: flex;

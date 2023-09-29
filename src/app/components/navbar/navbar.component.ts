@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Renderer2 } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
   screenWidth: number = window.innerWidth;
   hamburger: boolean = true;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private renderer: Renderer2) {
     this.getScreenSize();
   }
 
@@ -28,8 +28,9 @@ export class NavbarComponent implements OnInit {
     this.screenWidth = window.innerWidth;
   }
 
+  hamburgerSlideIn() {}
+
   toggleHamburger() {
     this.hamburger = !this.hamburger;
-    console.log(this.hamburger);
   }
 }
