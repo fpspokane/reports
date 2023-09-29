@@ -1,3 +1,4 @@
+import { DomSanitizer } from '@angular/platform-browser';
 import { Component, OnInit, HostListener, Renderer2 } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
@@ -11,7 +12,11 @@ export class NavbarComponent implements OnInit {
   screenWidth: number = window.innerWidth;
   hamburger: boolean = false;
 
-  constructor(private router: Router, private renderer: Renderer2) {
+  constructor(
+    private router: Router,
+    private renderer: Renderer2,
+    private sanitizer: DomSanitizer
+  ) {
     this.getScreenSize();
   }
 
@@ -28,14 +33,12 @@ export class NavbarComponent implements OnInit {
     this.screenWidth = window.innerWidth;
   }
 
-  toggleHamburger() {
-    event?.stopPropagation();
-    console.log('toggleHamburger');
+  toggleHamburger($event: Event) {
     this.hamburger = !this.hamburger;
+    $event.stopPropagation();
   }
 
   hideHamburger() {
-    console.log('hideHamburger');
     this.hamburger = false;
   }
 }

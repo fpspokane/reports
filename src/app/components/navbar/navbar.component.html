@@ -6,8 +6,8 @@
     routerLink="/"
   />
   <!-- place comment in ng-container for hamburger functionality -->
-
-  <ng-container *ngIf="screenWidth > 768; else hamburgerMenu">
+  <!-- *ngIf="screenWidth > 768; else hamburgerMenu" -->
+  <ng-container>
     <div class="nav-links" [class.hide]="currentPath === '/'">
       <a class="nav-link" routerLink="/providers">All Providers Dashboard</a>
       <a class="nav-link" routerLink="/es-providers">
@@ -22,7 +22,7 @@
     <i
       class="material-icons hamburger"
       [class.hide]="currentPath === '/'"
-      (click)="toggleHamburger()"
+      (click)="toggleHamburger($event)"
       >{{ "menu_open" }}</i
     >
   </ng-template>
