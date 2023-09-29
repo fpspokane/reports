@@ -36,11 +36,14 @@
 }
 .hamburger {
   height: auto;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  padding: 3px;
   color: var(--primary-text);
   cursor: pointer;
-  transition: transform 300ms ease-out;
+  border-radius: 50%;
+  transition: transform 300ms ease-out, background-color 200ms ease-out;
 }
 .hamburger:active {
   transform: scale(1.15);
+  background-color: var(--primary-color);
 }

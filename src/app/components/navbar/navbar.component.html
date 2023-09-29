@@ -11,22 +11,26 @@
     <div class="nav-links" [class.hide]="currentPath === '/'">
       <a class="nav-link" routerLink="/providers">All Providers Dashboard</a>
       <a class="nav-link" routerLink="/es-providers">
-        All ES Providers Dashboard</a
-      >
+        All ES Providers Dashboard
+      </a>
       <a class="nav-link" routerLink="/fps-prevention"
-        >FPS Prevention Dashboard</a
-      >
+        >FPS Prevention Dashboard
+      </a>
     </div>
   </ng-container>
-  <ng-template #hamburgerMenu [class.hide]="currentPath === '/'">
-    <i class="material-icons hamburger" (click)="toggleHamburger()">{{
-      "menu_open"
-    }}</i>
+  <ng-template #hamburgerMenu>
+    <i
+      class="material-icons hamburger"
+      [class.hide]="currentPath === '/'"
+      (click)="toggleHamburger($event)"
+      >{{ "menu_open" }}</i
+    >
   </ng-template>
 </section>
-<ng-container *ngIf="hamburger">
+<ng-container>
   <app-hamburger
-    [data]="hamburger"
+    [hamburger]="hamburger"
     [toggleHamburger]="toggleHamburger.bind(this)"
+    [hideHamburger]="hideHamburger.bind(this)"
   ></app-hamburger>
 </ng-container>

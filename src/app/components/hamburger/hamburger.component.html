@@ -1,5 +1,16 @@
-<div class="h-container">
-  <i class="material-icons hamburger" (click)="toggleHamburger()">{{
-    "close"
-  }}</i>
-</div>
+<section class="h-wrapper" [ngClass]="{ 'slide-in': hamburger }">
+  <div
+    class="h-container"
+    [ngClass]="{ 'slide-in': hamburger }"
+    appClickedOutside
+    (clickedOutside)="hideHamburger()"
+  >
+    <div class="h-icon-container">
+      <i
+        class="material-icons h-close-icon"
+        (click)="toggleHamburger($event)"
+        >{{ "close" }}</i
+      >
+    </div>
+  </div>
+</section>

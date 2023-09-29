@@ -11,6 +11,7 @@ import { EsProvidersComponent } from './components/es-providers/es-providers.com
 import { FpsPreventionComponent } from './components/fps-prevention/fps-prevention.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HamburgerComponent } from './components/hamburger/hamburger.component';
+import { ClickedOutsideDirective } from './directives/clicked-outside.directive';
 
 const appRoutes: Routes = [
   { path: '', component: SplashPageComponent },
@@ -32,6 +33,7 @@ const appRoutes: Routes = [
     FpsPreventionComponent,
     FooterComponent,
     HamburgerComponent,
+    ClickedOutsideDirective,
   ],
   imports: [
     BrowserModule,
