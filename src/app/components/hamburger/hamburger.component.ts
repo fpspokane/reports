@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HamburgerComponent implements OnInit {
   @Input() hamburger!: boolean;
   @Input() toggleHamburger!: Function;
+  @Input() hideHamburger!: Function;
 
   constructor() {}
 

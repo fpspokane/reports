@@ -9,7 +9,7 @@ import { Router, NavigationEnd } from '@angular/router';
 export class NavbarComponent implements OnInit {
   currentPath: string = '/';
   screenWidth: number = window.innerWidth;
-  hamburger: boolean = true;
+  hamburger: boolean = false;
 
   constructor(private router: Router, private renderer: Renderer2) {
     this.getScreenSize();
@@ -28,9 +28,14 @@ export class NavbarComponent implements OnInit {
     this.screenWidth = window.innerWidth;
   }
 
-  hamburgerSlideIn() {}
-
   toggleHamburger() {
+    event?.stopPropagation();
+    console.log('toggleHamburger');
     this.hamburger = !this.hamburger;
+  }
+
+  hideHamburger() {
+    console.log('hideHamburger');
+    this.hamburger = false;
   }
 }
