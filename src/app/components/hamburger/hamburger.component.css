@@ -3,10 +3,10 @@
   height: 100vh;
   width: 100vw;
   top: 0;
-  right: -100%;
+  right: -105%;
   position: fixed;
   z-index: 1;
-  transition: right 200ms ease;
+  transition: right 500ms ease;
 }
 .h-container {
   background-color: var(--primary-color);
@@ -53,6 +53,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  text-align: right;
   width: 100%;
   padding: 5px 0;
   margin: 10px 0;
@@ -69,3 +70,19 @@
   padding-left: 15px;
   color: var(--tertiary-color);
 }
+
+@media (max-width: 414px) {
+  .h-wrapper {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .h-container {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 0 0 0 black;
+  }
+  .h-link {
+    font-size: 1rem;
+  }
+}
+
+/* 660-768, 818+ */
