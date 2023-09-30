@@ -48,16 +48,25 @@
   background-color: var(--primary-color);
 }
 
+@media (max-width: 768px) {
+  .nav {
+    height: 10vh;
+  }
+  .hamburger {
+    font-size: 2.7rem;
+  }
+}
+
 @media (orientation: landscape) {
   @media (max-height: 600px) {
     .nav {
-      height: 11vh;
+      height: 15vh;
     }
   }
 
   @media (max-height: 400px) {
     .nav {
-      height: 15vh;
+      height: 20vh;
     }
   }
 }

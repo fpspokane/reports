@@ -39,13 +39,15 @@
   height: 50px;
   margin: 0 2%;
   cursor: pointer;
-  transition: background-color 300ms ease-out, transform 100ms ease-out;
+  transition: background-color ease-out;
 }
 .sp-button:hover {
   background-color: var(--secondary-color);
+  transition-duration: 300ms;
 }
 .sp-button:active {
-  transform: scale(0.9);
+  background-color: var(--secondary-color);
+  transition-duration: 100ms;
 }
 
 @media (max-width: 768px) {
