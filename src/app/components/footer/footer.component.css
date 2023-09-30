@@ -11,16 +11,22 @@
   font-size: 0.8rem;
 }
 
+@media (max-width: 768px) {
+  .f-wrapper {
+    height: 10vh;
+  }
+}
+
 @media (orientation: landscape) {
   @media (max-height: 600px) {
     .f-wrapper {
-      height: 11vh;
+      height: 15vh;
     }
   }
 
   @media (max-height: 400px) {
     .f-wrapper {
-      height: 15vh;
+      height: 20vh;
     }
   }
 }
