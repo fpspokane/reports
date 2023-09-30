@@ -7,7 +7,7 @@
   />
   <!-- place comment in ng-container for hamburger functionality -->
   <!-- *ngIf="screenWidth > 768; else hamburgerMenu" -->
-  <ng-container>
+  <ng-container *ngIf="screenWidth > 768; else hamburgerMenu">
     <div class="nav-links" [class.hide]="currentPath === '/'">
       <a class="nav-link" routerLink="/providers">All Providers Dashboard</a>
       <a class="nav-link" routerLink="/es-providers">
@@ -20,7 +20,7 @@
   </ng-container>
   <ng-template #hamburgerMenu>
     <i
-      class="material-icons hamburger"
+      class="material-icons material-icons-round hamburger"
       [class.hide]="currentPath === '/'"
       (click)="toggleHamburger($event)"
       >{{ "menu_open" }}</i

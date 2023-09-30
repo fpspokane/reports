@@ -7,10 +7,41 @@
   >
     <div class="h-icon-container">
       <i
-        class="material-icons h-close-icon"
+        class="material-icons material-icons-round h-close-icon"
         (click)="toggleHamburger($event)"
         >{{ "close" }}</i
       >
+    </div>
+    <div class="h-links">
+      <a
+        class="h-link"
+        routerLink="/providers"
+        (click)="toggleHamburger($event)"
+      >
+        All Providers Dashboard
+        <i class="material-icons material-icons-round h-link-icon">{{
+          "pie_chart"
+        }}</i>
+      </a>
+      <a
+        class="h-link"
+        routerLink="/es-providers"
+        (click)="toggleHamburger($event)"
+      >
+        All ES Providers Dashboard
+        <i class="material-icons material-icons-round h-link-icon"
+          >{{ "analytics" }}
+        </i>
+      </a>
+      <a
+        class="h-link"
+        routerLink="/fps-prevention"
+        (click)="toggleHamburger($event)"
+        >FPS Prevention Dashboard
+        <i class="material-icons material-icons-round h-link-icon"
+          >{{ "map" }}
+        </i>
+      </a>
     </div>
   </div>
 </section>
