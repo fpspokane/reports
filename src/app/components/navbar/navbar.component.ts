@@ -10,7 +10,7 @@ import { Router, NavigationEnd } from '@angular/router';
 export class NavbarComponent implements OnInit {
   currentPath: string = '/';
   screenWidth: number = window.innerWidth;
-  hamburger: boolean = false;
+  hamburger: boolean = true;
 
   constructor(
     private router: Router,

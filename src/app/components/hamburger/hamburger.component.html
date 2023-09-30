@@ -12,5 +12,29 @@
         >{{ "close" }}</i
       >
     </div>
+    <div class="h-links">
+      <a
+        class="h-link"
+        routerLink="/providers"
+        appClickedOutside
+        (clickedOutside)="hideHamburger()"
+        >All Providers Dashboard</a
+      >
+      <a
+        class="h-link"
+        routerLink="/es-providers"
+        appClickedOutside
+        (clickedOutside)="hideHamburger()"
+      >
+        All ES Providers Dashboard
+      </a>
+      <a
+        class="h-link"
+        routerLink="/fps-prevention"
+        appClickedOutside
+        (clickedOutside)="hideHamburger()"
+        >FPS Prevention Dashboard
+      </a>
+    </div>
   </div>
 </section>
