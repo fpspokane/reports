@@ -5,8 +5,6 @@
     alt="ikTech logo"
     routerLink="/"
   />
-  <!-- place comment in ng-container for hamburger functionality -->
-  <!-- *ngIf="screenWidth > 768; else hamburgerMenu" -->
   <ng-container *ngIf="screenWidth > 768; else hamburgerMenu">
     <div class="nav-links" [class.hide]="currentPath === '/'">
       <a class="nav-link" routerLink="/providers">All Providers Dashboard</a>
