@@ -47,3 +47,17 @@
   transform: scale(1.15);
   background-color: var(--primary-color);
 }
+
+@media (orientation: landscape) {
+  @media (max-height: 600px) {
+    .nav {
+      height: 11vh;
+    }
+  }
+
+  @media (max-height: 400px) {
+    .nav {
+      height: 15vh;
+    }
+  }
+}
