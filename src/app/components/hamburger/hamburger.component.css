@@ -60,11 +60,14 @@
   text-decoration: none;
   font-size: 1.1rem;
   color: var(--primary-text);
-  transition: transform 300ms ease-out;
+  transition: transform 300ms ease-out, color 100ms ease-out;
   transform-origin: right;
 }
 .h-link:hover {
   transform: scale(1.05);
+}
+.h-link:active {
+  color: var(--secondary-color);
 }
 .h-link-icon {
   padding-left: 15px;
