@@ -1,8 +1,34 @@
 <section class="nav" [class.nav-splash-page]="currentPath === '/'">
-  <img class="nav-logo" src="assets/images/ikTech-nb.png" alt="ikTech logo" />
-  <div class="nav-links" [class.hide]="currentPath === '/'">
-    <a class="nav-link" routerLink="/providers">All Providers Dashboard</a>
-    <a class="nav-link" routerLink="/es-providers"> ES Providers Dashboard</a>
-    <a class="nav-link" routerLink="/fps-prevention">FPS Prevention Dashboard</a>
-  </div>
+  <img
+    class="nav-logo"
+    src="assets/images/ikTech-nb.png"
+    alt="ikTech logo"
+    routerLink="/"
+  />
+  <ng-container *ngIf="screenWidth > 768; else hamburgerMenu">
+    <div class="nav-links" [class.hide]="currentPath === '/'">
+      <a class="nav-link" routerLink="/providers">All Providers Dashboard</a>
+      <a class="nav-link" routerLink="/es-providers">
+        All ES Providers Dashboard
+      </a>
+      <a class="nav-link" routerLink="/fps-prevention"
+        >FPS Prevention Dashboard
+      </a>
+    </div>
+  </ng-container>
+  <ng-template #hamburgerMenu>
+    <i
+      class="material-icons material-icons-round hamburger"
+      [class.hide]="currentPath === '/'"
+      (click)="toggleHamburger($event)"
+      >{{ "menu_open" }}</i
+    >
+  </ng-template>
 </section>
+<ng-container>
+  <app-hamburger
+    [hamburger]="hamburger"
+    [toggleHamburger]="toggleHamburger.bind(this)"
+    [hideHamburger]="hideHamburger.bind(this)"
+  ></app-hamburger>
+</ng-container>

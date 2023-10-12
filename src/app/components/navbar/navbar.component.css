@@ -12,11 +12,13 @@
 }
 .nav-logo {
   height: 80%;
+  z-index: 1;
+  cursor: pointer;
 }
 .nav-links {
   display: flex;
   justify-content: right;
-  width: 60%;
+  width: 100%;
 }
 .hide {
   display: none;
@@ -31,4 +33,40 @@
 }
 .nav-link:hover {
   transform: scale(1.05);
+}
+.hamburger {
+  height: auto;
+  font-size: 2.2rem;
+  padding: 3px;
+  color: var(--primary-text);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 300ms ease-out, background-color 200ms ease-out;
+}
+.hamburger:active {
+  transform: scale(1.15);
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    height: 10vh;
+  }
+  .hamburger {
+    font-size: 2.7rem;
+  }
+}
+
+@media (orientation: landscape) {
+  @media (max-height: 600px) {
+    .nav {
+      height: 15vh;
+    }
+  }
+
+  @media (max-height: 400px) {
+    .nav {
+      height: 20vh;
+    }
+  }
 }

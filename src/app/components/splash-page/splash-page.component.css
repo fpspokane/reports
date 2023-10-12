@@ -4,11 +4,11 @@
   background-position: center center;
   opacity: 50%;
   width: 100%;
-  height: 45vh;
+  height: 46vh;
 }
 .sp-title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.2;
   width: 90%;
@@ -21,8 +21,9 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 45vh;
+  height: 46vh;
   padding-top: 11vh;
+  background-color: var(--background-color);
 }
 .sp-button {
   display: flex;
@@ -30,19 +31,71 @@
   align-items: center;
   text-align: center;
   text-decoration: none;
+  width: 230px;
   color: var(--primary-text);
-  font-weight: 200;
+  font-weight: 300;
   border-radius: 10px;
   background-color: var(--primary-color);
   height: 50px;
-  padding: 0 30px;
   margin: 0 2%;
   cursor: pointer;
-  transition: background-color 300ms ease-out, transform 100ms ease-out;
+  transition: background-color ease-out;
 }
 .sp-button:hover {
   background-color: var(--secondary-color);
+  transition-duration: 300ms;
 }
 .sp-button:active {
-  transform: scale(0.9);
+  background-color: var(--secondary-color);
+  transition-duration: 100ms;
+}
+
+@media (max-width: 768px) {
+  .sp-title-line::after {
+    content: "\a";
+    white-space: pre;
+  }
+  .sp-buttons {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+  .sp-button {
+    margin-bottom: 15px;
+  }
+  .sp-button:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 414px) {
+  .sp-title {
+    font-size: 2.2rem;
+  }
+  .sp-title-line::after {
+    content: none;
+    white-space: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .sp-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (orientation: landscape) {
+  .sp-buttons {
+    height: auto;
+    min-height: 46vh;
+  }
+}
+
+@media (max-height: 400px) and (orientation: landscape) {
+  .sp-hero {
+    height: 80vh;
+  }
+  .sp-title {
+    top: 45vh;
+  }
 }

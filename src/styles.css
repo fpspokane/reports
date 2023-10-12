@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "meyer-reset.css";
+@import "~material-icons/iconfont/material-icons.css";
 
 /* global colors */
 :root {
@@ -10,6 +11,6 @@
   --primary-text: #030d25;
 }
 * {
-  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
   box-sizing: border-box;
 }
