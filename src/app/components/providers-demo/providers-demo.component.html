@@ -1,124 +1,135 @@
-
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Homeless System Dashboard Demo Rough Draft</title>
-    <link rel="stylesheet" href="providers-demo.component.css">
-  </head>
-  <body>
-    <div class="container">
-      <h1>Homeless System Dashboard Demo Rough Draft</h1>
-      <h2>Time Period: Jan 1, 2023 - Nov 30, 2023</h2>
-      <table>
-        <thead>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 style="text-align: center; margin-top: 20px; font-size: 36px; border: 2px solid #ccc; padding: 10px; box-shadow: 3px 3px 5px #888888;">Homeless Services Dashboard</h1>
 
-          <tr>
-            <th>Program Type</th>
-            <th>Rental Assistance</th>
-            <th>Shelter Diversion</th>
-            <th>Shelter Turnways</th>
-            <th>Emergency Shelter</th>
-            <th>Transitional Housing</th>
-            <th>Permanent Housing</th>
-            <td>% Housing Retention</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
 
-            <td># People Served</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td># Adults</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td># Children (&lt;18)</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td># Households</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-          </tr>
-          <tr class="population">
-            <td>Population</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="families-with-children">
-            <td>Families with Children</td>
-            <td># People Served</td>
-            <td>335</td>
-            <td></td>
-            <td>296</td>
-            <td>671</td>
-            <td>265</td>
-            <td>206</td>
-          </tr>
-          <tr class="families-with-children">
-            <td></td>
-            <td># Adults</td>
-            <td>128</td>
-            <td></td>
-            <td>125</td>
-            <td>316</td>
-            <td>682</td>
-            <td></td>
-          </tr>
-          <tr class="families-with-children">
-            <td></td>
-            <td># Children (&lt;18)</td>
-            <td>207</td>
-            <td></td>
-            <td>171</td>
-            <td>355</td>
-            <td>265</td>
-            <td></td>
-            </tr>
-            <tr class="families-with-children">
-              <td></td>
-              <td># Households</td>
-              <td>128</td>
-              <td></td>
-              <td>125</td>
-              <td>316</td>
-              <td>682</td>
-              <td></td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-        </body>
-      </html>
-```
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
 
+        .title-custom {
+          text-align: center;
+          margin-top: 20px;
+          font-size: 36px;
+          border: 2px solid #ccc;
+          padding: 10px;
+          box-shadow: 3px 3px 5px #888888;
+        }
+        .service-stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .service {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .sub-module {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+        }
+        .centered-services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .centered-services .service {
+            margin-top: 20px;
+            width: 200px; /* Adjust width as needed */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title-custom">Homeless Services Dashboard</h1>
+    <div class="service-stats">
+        <div class="service">
+            <h2>Shelter Services</h2>
+            <p>Total Beds: 500</p>
+            <p>Occupied Beds: 350</p>
+            <div class="sub-module">
+                <h3>Occupancy Rate</h3>
+                <p>70%</p>
+            </div>
+            <div class="sub-module">
+                <h3>Available Rooms</h3>
+                <p>150</p>
+            </div>
+        </div>
+        <div class="service">
+            <h2>Prevention Services</h2>
+
+
+            <div class="sub-module">
+                <h3>Total Households</h3>
+                <p>87</p>
+            </div>
+            <div class="sub-module">
+                <h3>Total Served</h3>
+                <p>150</p>
+            </div>
+        </div>
+        <div class="service">
+            <h2>Aftercare Services</h2>
+            <p>Counselors Available: 5</p>
+            <p>Client Sessions Today: 30</p>
+            <div class="sub-module">
+                <h3>Top Counseling Issue</h3>
+                <p>Substance Abuse</p>
+            </div>
+            <div class="sub-module">
+                <h3>Follow-up Appointments</h3>
+                <p>10 Scheduled</p>
+            </div>
+        </div>
+        <div class="service">
+            <h2>Permanent Supportive Services</h2>
+            <p>Clients Enrolled: 50</p>
+            <p>Employment Placements: 10</p>
+            <div class="sub-module">
+                <h3>Popular Skill Training</h3>
+                <p>Computer Literacy</p>
+            </div>
+            <div class="sub-module">
+                <h3>Upcoming Workshops</h3>
+                <p>Resume Writing</p>
+            </div>
+        </div>
+    </div>
+    <div class="centered-services">
+      <div class="service">Expand All Shelter Servicers</div>
+      <div class="service">Expand All Prevention Servicers</div>
+      <div class="service">Explore All Aftercare Servicers</div>
+      <div class="service">Explore All Permanent Supportive Services</div>
+  </div>
+    <!-- Add your JavaScript code here -->
+</body>
+</html>
