@@ -10,6 +10,9 @@ import { ProvidersComponent } from './components/providers/providers.component';
 import { EsProvidersComponent } from './components/es-providers/es-providers.component';
 import { FpsPreventionComponent } from './components/fps-prevention/fps-prevention.component';
 import { ProvidersDemoComponent } from './components/providers-demo/providers-demo.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HamburgerComponent } from './components/hamburger/hamburger.component';
+import { ClickedOutsideDirective } from './directives/clicked-outside.directive';
 
 const appRoutes: Routes = [
   { path: '', component: SplashPageComponent },
@@ -30,7 +33,11 @@ const appRoutes: Routes = [
     ProvidersComponent,
     ProvidersDemoComponent,
     EsProvidersComponent,
+    ProvidersDemoComponent,
     FpsPreventionComponent,
+    FooterComponent,
+    HamburgerComponent,
+    ClickedOutsideDirective,
   ],
   imports: [
     BrowserModule,
