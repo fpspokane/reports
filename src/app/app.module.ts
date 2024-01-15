@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProvidersComponent } from './components/providers/providers.component';
 import { EsProvidersComponent } from './components/es-providers/es-providers.component';
 import { FpsPreventionComponent } from './components/fps-prevention/fps-prevention.component';
+import { ProvidersDemoComponent } from './components/providers-demo/providers-demo.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HamburgerComponent } from './components/hamburger/hamburger.component';
 import { ClickedOutsideDirective } from './directives/clicked-outside.directive';
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
     path: 'fps-prevention',
     component: FpsPreventionComponent,
   },
+  { path: 'providers-demo', component: ProvidersDemoComponent },
 ];
 
 @NgModule({
@@ -30,6 +32,7 @@ const appRoutes: Routes = [
     NavbarComponent,
     ProvidersComponent,
     EsProvidersComponent,
+    ProvidersDemoComponent,
     FpsPreventionComponent,
     FooterComponent,
     HamburgerComponent,
