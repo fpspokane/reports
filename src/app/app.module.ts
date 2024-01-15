@@ -31,6 +31,7 @@ const appRoutes: Routes = [
     SplashPageComponent,
     NavbarComponent,
     ProvidersComponent,
+    ProvidersDemoComponent,
     EsProvidersComponent,
     ProvidersDemoComponent,
     FpsPreventionComponent,
