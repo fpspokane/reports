@@ -11,7 +11,7 @@
 .h-container {
   background-color: var(--primary-color);
   height: 100vh;
-  width: 350px;
+  width: 380px;
   position: fixed;
   top: 0;
   right: -100%;
@@ -90,13 +90,7 @@
     border-radius: 0;
     box-shadow: 0 0 0 0 black;
   }
-  /* .h-close-icon {
-    font-size: 2.7rem;
-  } */
   .h-links {
     padding: 30px 7px 0 0;
-  }
-  .h-link {
-    font-size: 1.2rem;
   }
 }
