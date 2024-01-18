@@ -1,0 +1,56 @@
+<section class="h-wrapper" [ngClass]="{ 'slide-in': hamburger }">
+  <div
+    class="h-container"
+    [ngClass]="{ 'slide-in': hamburger }"
+    appClickedOutside
+    (clickedOutside)="hideHamburger()"
+  >
+    <div class="h-icon-container">
+      <i
+        class="material-icons material-icons-round h-close-icon"
+        (click)="toggleHamburger($event)"
+        >{{ "close" }}</i
+      >
+    </div>
+    <div class="h-links">
+      <a
+        class="h-link"
+        routerLink="/providers"
+        (click)="toggleHamburger($event)"
+      >
+        All Providers Dashboard
+        <i class="material-icons material-icons-round h-link-icon">{{
+          "pie_chart"
+        }}</i>
+      </a>
+      <a
+        class="h-link"
+        routerLink="/es-providers"
+        (click)="toggleHamburger($event)"
+      >
+        All ES Providers Dashboard
+        <i class="material-icons material-icons-round h-link-icon"
+          >{{ "analytics" }}
+        </i>
+      </a>
+      <a
+        class="h-link"
+        routerLink="/fps-prevention"
+        (click)="toggleHamburger($event)"
+        >FPS Prevention Dashboard
+        <i class="material-icons material-icons-round h-link-icon"
+          >{{ "map" }}
+        </i>
+      </a>
+      <a
+        class="h-link"
+        routerLink="/providers-demo"
+        (click)="toggleHamburger($event)"
+        >Demo / Mock Up Future Dashboard
+        <i class="material-icons material-icons-round h-link-icon"
+          >{{ "grid_on" }}
+        </i>
+      </a>
+    </div>
+  </div>
+</section>

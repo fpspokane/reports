@@ -1,0 +1,32 @@
+.f-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  border-top: 1px solid var(--secondary-color);
+  background-color: var(--background-color);
+}
+.f-copyright {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .f-wrapper {
+    height: 10vh;
+  }
+}
+
+@media (orientation: landscape) {
+  @media (max-height: 600px) {
+    .f-wrapper {
+      height: 15vh;
+    }
+  }
+
+  @media (max-height: 400px) {
+    .f-wrapper {
+      height: 20vh;
+    }
+  }
+}

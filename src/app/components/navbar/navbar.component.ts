@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { Component, OnInit, HostListener, Renderer2 } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
@@ -8,8 +9,16 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   currentPath: string = '/';
+  screenWidth: number = window.innerWidth;
+  hamburger: boolean = false;
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private renderer: Renderer2,
+    private sanitizer: DomSanitizer
+  ) {
+    this.getScreenSize();
+  }
 
   ngOnInit() {
     this.router.events.subscribe((event) => {
@@ -17,5 +26,19 @@ export class NavbarComponent implements OnInit {
         this.currentPath = this.router.url;
       }
     });
+  }
+
+  @HostListener('window:resize', ['$event'])
+  getScreenSize(event?: string) {
+    this.screenWidth = window.innerWidth;
+  }
+
+  toggleHamburger($event: Event) {
+    this.hamburger = !this.hamburger;
+    $event.stopPropagation();
+  }
+
+  hideHamburger() {
+    this.hamburger = false;
   }
 }

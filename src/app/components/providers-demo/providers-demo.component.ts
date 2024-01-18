@@ -3,28 +3,24 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-providers-demo',
   templateUrl: './providers-demo.component.html',
-  styleUrls: ['./providers-demo.component.css']
+  styleUrls: ['./providers-demo.component.css'],
 })
 export class ProvidersDemoComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   openModal(category: string) {
     const modal = document.getElementById(`modal-${category.toLowerCase()}`);
     if (modal) {
-      modal.style.display = "block";
+      modal.style.display = 'block';
     }
   }
 
   closeModal(category: string) {
     const modal = document.getElementById(`modal-${category.toLowerCase()}`);
     if (modal) {
-      modal.style.display = "none";
+      modal.style.display = 'none';
     }
   }
-
 }
